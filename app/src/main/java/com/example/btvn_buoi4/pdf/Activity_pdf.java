@@ -40,7 +40,7 @@ public class Activity_pdf extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.search:
-                        Toast.makeText(Activity_pdf.this, "This is menu search", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "This is menu search", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.option:
                         Toast.makeText(Activity_pdf.this, "This is menu option", Toast.LENGTH_SHORT).show();
@@ -53,14 +53,14 @@ public class Activity_pdf extends AppCompatActivity {
         getWindow().setStatusBarColor(getColor(R.color.color_status_bar));
     }
 
-    private List<Pdf> setListPdf() {
-        List<Pdf> pdfList = new ArrayList<>();
+    private List<PdfModel> setListPdf() {
+        List<PdfModel> pdfModelList = new ArrayList<>();
 
-        pdfList.add(new Pdf("To skill a Mockingbird"));
-        pdfList.add(new Pdf("To skill a Mockingbird"));
-        pdfList.add(new Pdf("To skill a Mockingbird"));
-        pdfList.add(new Pdf("To skill a Mockingbird"));
-        pdfList.add(new Pdf("To skill a Mockingbird"));
-        return pdfList;
+        pdfModelList.add(new PdfModel("To skill a Mockingbird"));
+        pdfModelList.add(new PdfModel("To skill a Mockingbird"));
+        pdfModelList.add(new PdfModel("To skill a Mockingbird"));
+        pdfModelList.add(new PdfModel("To skill a Mockingbird"));
+        pdfModelList.add(new PdfModel("To skill a Mockingbird"));
+        return pdfModelList;
     }
 }

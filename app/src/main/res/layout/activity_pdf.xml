@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pdf.Activity_pdf"
+    tools:context=".pdfModel.Activity_pdf"
     android:orientation="vertical"
     >
     <androidx.appcompat.widget.Toolbar
@@ -14,7 +14,6 @@
         android:background="#ffe03f"
         android:paddingEnd="10dp"
         app:title="PDF READER"
-        android:paddingStart="130dp"
         android:gravity="center"
         >
     </androidx.appcompat.widget.Toolbar>

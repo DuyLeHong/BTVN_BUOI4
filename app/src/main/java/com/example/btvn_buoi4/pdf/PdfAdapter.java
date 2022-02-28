@@ -14,10 +14,10 @@ import java.util.List;
 
 public class PdfAdapter extends  RecyclerView.Adapter{
 
-    private List<Pdf> pdfList;
+    private List<PdfModel> pdfModelList;
 
-    public PdfAdapter(List<Pdf> pdfList) {
-        this.pdfList = pdfList;
+    public PdfAdapter(List<PdfModel> pdfModelList) {
+        this.pdfModelList = pdfModelList;
     }
 
     @NonNull
@@ -29,13 +29,13 @@ public class PdfAdapter extends  RecyclerView.Adapter{
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        Pdf pdf = pdfList.get(position);
-        ((PdfViewHolder) holder).tv_name_pdf.setText(pdf.getName());
+        PdfModel pdfModel = pdfModelList.get(position);
+        ((PdfViewHolder) holder).tv_name_pdf.setText(pdfModel.getName());
     }
 
     @Override
     public int getItemCount() {
-        return pdfList.size();
+        return pdfModelList.size();
     }
 
     public class PdfViewHolder extends RecyclerView.ViewHolder{
