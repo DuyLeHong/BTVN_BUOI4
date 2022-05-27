@@ -72,6 +72,7 @@ public class Activity_folder extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.add_menu:
                         Toast.makeText(Activity_folder.this, "This is menu add", Toast.LENGTH_SHORT).show();
+                        break;
                 }
                 return true;
             }

@@ -40,10 +40,6 @@ public class FolderAdapter extends RecyclerView.Adapter {
         return folderList.size();
     }
 
-//    @Override
-//    public int getItemCount() {
-//        return folderList.size();
-//    }
 
     public class FolderViewHolder extends RecyclerView.ViewHolder{
         private TextView tv_name;
